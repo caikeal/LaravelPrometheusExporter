@@ -76,7 +76,8 @@ class PrometheusExporterServiceProvider extends ServiceProvider
                 break;
             case 'redis':
                 $this->app->bind(Adapter::class, function () {
-                    return new Redis(config('prometheus-exporter.redis_connection'));
+                    Redis::setConfigName(config('prometheus-exporter.redis_connection'));
+                    return new Redis();
                 });
                 break;
             case 'push':
