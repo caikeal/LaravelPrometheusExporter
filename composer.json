@@ -1,5 +1,5 @@
 {
-    "name": "triadev/laravel-prometheus-exporter",
+    "name": "caikeal/laravel-prometheus-exporter",
     "description": "A laravel and lumen service provider to export metrics for prometheus.",
     "keywords": [
         "Laravel",
@@ -7,15 +7,9 @@
         "Metrics"
     ],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Christopher Lorke",
-            "email": "christopher.lorke@gmx.de"
-        }
-    ],
     "require": {
-        "php": ">=7.2",
-        "endclothing/prometheus_client_php": "^1.0",
+        "php": ">=7.1",
+        "caikeal/prometheus_client_php": "^1.1",
         "illuminate/support": "^5.6|^6.0"
     },
     "require-dev": {
@@ -28,7 +22,6 @@
         "squizlabs/php_codesniffer": "^3.0"
     },
     "suggest": {
-        "ext-redis": "Required if using Redis.",
         "ext-apc": "Required if using APCu."
     },
     "autoload": {
